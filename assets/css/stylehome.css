@@ -1,0 +1,13 @@
+body{
+    font-family: "Nunito Sans", sans-serif;
+}
+.section1{
+    background-image: url("/assets/img/imgsection1.jpg");
+    background-position: 50% 50%;
+}
+.btnsection1{
+    border: none;
+    background: #43baff;
+    text-decoration: none;
+    padding: 20px 35px;
+}
