@@ -56,25 +56,29 @@
                         <div class="md-form mb-0">
                             <label for="form_contact_nombre" class="active">Nombres</label>
                             <input formControlName="nombres" type="text" name="form_contact_nombre" id="form_contact_nom" class="form-control shadow" placeholder="Su nombre" required="">
-                            <span *ngIf="contactoForm.get('contacto')?.hasError('required') " type="text" class="text-danger fw-bold ps1">nombre incorrecto</span>
+                            <span *ngIf="contactoForm.get('nombres')?.hasError('required') && contactoForm.get('nombres')?.touched" type="text" class="text-danger fw-bold ps1">nombre invalido</span>
                         </div>
                     </div>
                     <div class="col-9 ms-5 p-0 pl-lg-2 mt-1 mb-2 ">
                         <div class="md-form mb-0">
                             <label for="form_contact_nom" class="active">Apellidos</label>
                             <input formControlName="apellidos" type="text" name="form_contact_apellidos" id="form_contact_nom" class="form-control shadow" placeholder="Sus apellidos" required="">
+                            <span *ngIf="contactoForm.get('apellidos')?.hasError('required') && contactoForm.get('apellidos')?.touched" type="text" class="text-danger fw-bold ps1">apellidos invalidos</span>
+
                         </div>
                     </div>
                     <div class="col-9 ms-5 p-0 pl-lg-2 mt-1 mb-2 ">
                         <div class="md-form mb-0">
                             <label for="mail" class="active">Correo electronico</label>
                             <input formControlName="correo" type="mail" name="form_contact_correo" id="form_contact_nom" class="form-control shadow" placeholder="Su correo electronico" required="">
+                            <span *ngIf="contactoForm.get('correo')?.hasError('required') && contactoForm.get('correo')?.touched" type="text" class="text-danger fw-bold ps1">correo invalido</span>
                         </div>
                     </div>
                     <div class="col-9 ms-5 p-0 pl-lg-2 mt-1 mb-2 ">
                         <div class="md-form mb-0">
                             <label for="form_contact_nom" class="active">Telefono</label>
                             <input formControlName="telefono" type="number" name="form_contact_nom" id="form_contact_nom" class="form-control shadow" placeholder="Su telefono" required="">
+                            <span *ngIf="contactoForm.get('telefono')?.hasError('required') && contactoForm.get('telefono')?.touched" type="text" class="text-danger fw-bold ps1">telefono invalido</span>
                         </div>
                     </div>
 
@@ -84,12 +88,14 @@
                         <div class="md-form mb-0">
                             <label for="form_contact_nombre" class="active">Nombre de la empresa</label>
                             <input formControlName="nombreEmp" type="text" name="form_contact_nombre_empresa" id="form_contact_nombre_empresa" class="form-control shadow" placeholder="Nombre de la empresa" required="">
+                            <span *ngIf="contactoForm.get('nombreEmp')?.hasError('required') && contactoForm.get('nombreEmp')?.touched" type="text" class="text-danger fw-bold ps1">Nombre de la empresa invalido</span>
                         </div>
                     </div>
                     <div class="col-9 ms-5 p-0 pl-lg-2 mt-1 mb-2 ">
                         <div class="md-form mb-0">
                             <label for="form_contact_nom" class="active">Sitio internet de la empresa</label>
                             <input formControlName="sitioEmp" type="text" name="form_contact_apellidos" id="form_contact_nom" class="form-control shadow" placeholder="Su sitio" required="">
+                            <span *ngIf="contactoForm.get('sitioEmp')?.hasError('required') && contactoForm.get('sitioEmp')?.touched" type="text" class="text-danger fw-bold ps1">Sitio internet invalido</span>
                         </div>
                     </div>
 
@@ -100,9 +106,8 @@
                         <option>Nueva, -12 meses</option>
                         <option>Existante, +12 meses</option>
                         </select>
-                        <div class="invalid-feedback">
-                        Please select a valid state.
-                        </div>
+                        <span *ngIf="contactoForm.get('tipoEmp')?.hasError('required') && contactoForm.get('tipoEmp')?.touched" type="text" class="text-danger fw-bold ps1">Tipo invalido</span>
+
                     </div>
                     <div class="col-9 ms-5 p-0 pl-lg-2 mt-1 mb-2">
                         <label for="validationCustom04" class="form-label">Categoria</label>
@@ -116,51 +121,53 @@
                         <option>Start-up</option>
                         <option>Otros</option>
                         </select>
-                        <div class="invalid-feedback">
-                        Please select a valid state.
-                        </div>
+                        <span *ngIf="contactoForm.get('categoriaEmp')?.hasError('required') && contactoForm.get('categoriaEmp')?.touched" type="text" class="text-danger fw-bold ps1">Categoria invalido</span>
+
                     </div>
                 </form>
             </div>
         </div>
 
-        <div class="contHijaRight col-12 col-lg-6 p-0">
+        <div class="contHijaRight col-md-12 col-lg-6 p-0">
             <div><h4 class="mb-4">Su proyecto</h4>
-                <form [formGroup]="contactoForm" class="mx-4 me-5" action="">
-                    <div class="row justify-content-between formParams">
-                        <div class="firstCard col-lg-4 col-sm-6 card m-lg-3 form-check checkCard mb-3 shadow" style="width: 13rem;">
+                <form [formGroup]="contactoForm" class="ms-3 me-5" action="">
+                    <div class="formParams">
+
+                        <div class="card cardParams form-check checkCard mb-3 shadow">
                             <input formControlName="softErpBox" class="form-check-input checkParams " type="checkbox" value="">
-                            <div class="card-body mt-2"><h5 class="card-title text_card">Soft E.R.P. para recursos humanos</h5></div>
+                            <div class="card-body mt-2"><h5 class="card-title text_card">Soft E.R.P.</h5></div>
                         </div>
-                        <div class="col-lg-4 col-sm-6 card m-lg-3 form-check checkCard mb-3 shadow" style="width: 13rem;">
+                        <div class= "card cardParams form-check checkCard mb-3 shadow">
                             <input formControlName="gestPersoBox" class="form-check-input checkParams" type="checkbox" value="">
-                            <div class="card-body mt-1"><h5 class="card-title text_card">Gestion administrativa del personnal</h5></div>
+                            <div class="card-body mt-1"><h5 class="card-title text_card">Gestion administrativa</h5></div>
                         </div>
-                        <div class="col-lg-4 col-sm-6 card m-lg-3 form-check checkCard mb-3 shadow" style="width: 13rem;">
+                        <div class= "card cardParams form-check checkCard mb-3 shadow">
                             <input formControlName="gestAusBox" class="form-check-input checkParams" type="checkbox" value="">
                             <div class="card-body mt-4"><h5 class="card-title text_card">Gestion de las ausencias</h5></div>
                         </div>
-                        <div class="col-lg-4 col-sm-6 card m-lg-3 form-check checkCard mb-3 shadow" style="width: 13rem;">
+                        <div class= "card cardParams form-check checkCard mb-3 shadow">
                             <input formControlName="proceRhBox" class="form-check-input checkParams" type="checkbox" value="">
                             <div class="card-body mt-3"><h5 class="card-title text_card">Automatisacion de processo RH</h5></div>
                         </div>
-                        <div class="col-lg-4 col-sm-6 card m-lg-3 form-check checkCard mb-3 shadow" style="width: 13rem;">
+                        <div class= "card cardParams form-check checkCard mb-3 shadow">
                             <input formControlName="remuBox" class="form-check-input checkParams" type="checkbox" value="">
                             <div class="card-body mt-3"><h5 class="card-title text_card">Aventajas y remuneraciones</h5></div>
                         </div>
-                        <div class="col-lg-4 col-sm-6 card m-lg-3 form-check checkCard mb-3 shadow" style="width: 13rem;">
+                        <div class= "card cardParams form-check checkCard mb-3 shadow">
                             <input formControlName="otroBox" class="form-check-input checkParams" type="checkbox" value="">
                             <div class="card-body mt-4 text-center"><h5 class="card-title text_card">Otro</h5></div>
                         </div>
                     </div>
                 </form>
-                <form class="mx-5" action="">
+                <form class="ms-4 me-5" action="">
                         <div class="form-floating mt-3 textAreaMarg">
-                            <textarea formControlName="textAreaBox" class="form-control TextArea shadow" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 200px"></textarea>
-                            <label class="ms-3" for="floating Textarea">Descripcion de su proyecto</label>
+                            <textarea class="form-control" placeholder="comentario del proyecto" id="floatingTextarea2" style="height: 200px"></textarea>
+                            <label for="floatingTextarea2">Descripcion del proyecto</label>
+                            <span *ngIf="contactoForm.get('tipoEmp')?.hasError('required') && contactoForm.get('tipoEmp')?.touched" type="text" class="text-danger fw-bold ps1">No quiere explicarnos mas?.</span>
                         </div>
 
-                        <div class=""><button class="btn btn-primary mt-4 shadow" style="width:15rem;" type="button" id="mandar_mensaje">Mandar mensaje</button></div>
+
+                        <div class=""><button class="btn btn-primary mt-4 shadow mandarStyle" type="button" id="mandar_mensaje">Mandar mensaje</button></div>
                 </form>
             </div>
         </div>
