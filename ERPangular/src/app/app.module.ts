@@ -21,7 +21,7 @@ import { ContactoComponent } from './components/contacto/contacto.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
     ReactiveFormsModule
   ],
   providers: [],

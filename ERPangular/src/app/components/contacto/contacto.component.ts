@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { FormBuilder, FormGroup } from '@angular/forms';
 
 @Component({
   selector: 'app-contacto',
@@ -7,9 +8,25 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ContactoComponent implements OnInit {
 
-  constructor() { }
+    contactoForm:   FormGroup;
+    regexmail = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/i
 
-  ngOnInit(): void {
-  }
+    constructor(private fb:FormBuilder) {
+        this.contactoForm = this.fb.group({
+
+
+
+
+
+
+
+
+
+        })
+
+    }
+
+    ngOnInit(): void {
+    }
 
 }
