@@ -1,0 +1,24 @@
+body{
+    font-family: "Nunito Sans", sans-serif;
+}
+.section1{
+    background-image: url("/assets/img/imgsection1.jpg");
+    background-position: 50% 50%;
+}
+.btnsection1{
+    border: none;
+    background: #43baff;
+    text-decoration: none;
+    padding: 20px 35px;
+}
+.parrafoS2{
+    color: #6d6d6d;
+    line-height: 1.875;
+    font-weight: 400;
+}
+.iS2{
+    color: #7e58c5;
+}
+.iS2:hover{
+    color: #43baff;
+}
