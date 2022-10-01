@@ -1,1 +1,167 @@
-<p>contacto works!</p>
+<!-- container 1 -->
+<section class="container-fluid col-12 p-5 container1Params d-flex flex-wrap justify-content-center">
+    <div class="fw-bold col-12 p-0 m-0  mb-3 subtitle text-center">CONTACTARNOS</div>
+    <h1 class="H1C1Params col-12 col-lg-7 p-0 m-0 text-center">¡Ponemos su proyecto en marcha!</h1>
+    <!-- mettons su projet en route! -->
+</section>
+
+<!-- container 2 -->
+<section class="container-fluid col-12 p-5 container2Params d-flex flex-wrap">
+    <div class="row align-items-start row-padding">
+        <!-- container hija left -->
+        <div class="col-12 col-lg-4 p-0 pr-lg-5 m-0 d-flex flex-wrap">
+            <div class="fw-bold col-12 mb-4 subtitle">PROCESSUS</div>
+            <h2 class="H2C2Params col-12 col-lg-7">Descubre como contactarnos</h2>
+            <div class="col-12 p-0 m-0 mt_5 discover"> Descubre el proceso </div>
+
+        </div>
+        <!-- container hija right -->
+        <div class="col-12 col-lg-8 p-0 m-0 pl-lg-4 d-flex flex-wrap">
+            <div class="divHijaLeft col-12 col-lg-6 p-0 pr-lg-4 d-flex flex-wrap position-relative align-items-start">
+                <div class="col-12 d-flex flex-wrap justify-content-center">
+                    <div class="col-12 p-3 card-process1 d-flex flex-wrap justify-content-center align-card">
+                        <div class="numeroParams"><p class="numParamsP">1</p></div>
+                        <div class="fw-bold col-12 text-center p-0 my-3">Solicitar una llamada</div>
+                        <div class="textCentral col-12 text-center">Una vez que se envíe el formulario, nos comunicaremos con usted para discutir sus problemas y objetivos en detalle.</div>
+                        <div  class="textCentral col-12 text-center">Sin embargo, puedes contactar primero vía<a href="https://api.whatsapp.com/"> whatsapp</a> donde un asesor responderá algunas preguntas.</div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="divHijaRight col-12 col-lg-6 p-0 pl-lg-4">
+                <div class="col-12 p-0 m-0">
+                    <div class="col-12 card-process2 d-flex flex-wrap justify-content-center p-3">
+                        <div class="numeroParams"><p class="numParamsP">2</p></div>
+                        <div class="fw-bold col-12 text-center p-0 my-3">Analisar su proyecto</div>
+                        <div class="textCentral col-12 text-center">Te facilitamos un presupuesto de tu proyecto al detalle (servicios solicitados, precio, calendario provisional y equipo a cargo de tu proyecto)</div>
+                    </div>
+                </div>
+                <div class="col-12 p-0 m-0 mt-5">
+                    <div class="col-12 card-process1 d-flex flex-wrap justify-content-center p-3">
+                        <div class="numeroParams"><p class="numParamsP">3</p></div>
+                            <div class="fw-bold col-12 text-center p-0 my-3">En el trabajo !</div>
+                            <div class="textCentral col-12 text-center">Una vez aceptada la propuesta y firmado el contrato, ¡su proyecto puede comenzar! Confía en nosotros, ¡solo puedes estar satisfecho con el resultado!</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="container-fluid col-12 pt-lg-5 container3Params">
+    <div class="row align-items-start ms-5">
+        <div class="col-12 col-lg-6 pb-5 p-0 m-0 d-flex flew-wrap">
+            <div><h4 class="mb-4 mt-3">Sus datos</h4>
+                <form class="row">
+                    <div class="col-9 ms-5 p-0 pl-lg-2 mt-1 mb-2 ">
+                        <div class="md-form mb-0">
+                            <label for="form_contact_nombre" class="active">Nombres</label>
+                            <input formControlName="nombres" type="text" name="form_contact_nombre" id="form_contact_nom" class="form-control shadow" placeholder="Su nombre" required="">
+                        </div>
+                    </div>
+                    <div class="col-9 ms-5 p-0 pl-lg-2 mt-1 mb-2 ">
+                        <div class="md-form mb-0">
+                            <label for="form_contact_nom" class="active">Apellidos</label>
+                            <input formControlName="apellidos" type="text" name="form_contact_apellidos" id="form_contact_nom" class="form-control shadow" placeholder="Sus apellidos" required="">
+                        </div>
+                    </div>
+                    <div class="col-9 ms-5 p-0 pl-lg-2 mt-1 mb-2 ">
+                        <div class="md-form mb-0">
+                            <label for="mail" class="active">Correo electronico</label>
+                            <input formControlName="correo" type="mail" name="form_contact_correo" id="form_contact_nom" class="form-control shadow" placeholder="Su correo electronico" required="">
+                        </div>
+                    </div>
+                    <div class="col-9 ms-5 p-0 pl-lg-2 mt-1 mb-2 ">
+                        <div class="md-form mb-0">
+                            <label for="form_contact_nom" class="active">Telefono</label>
+                            <input formControlName="telefono" type="number" name="form_contact_nom" id="form_contact_nom" class="form-control shadow" placeholder="Su telefono" required="">
+                        </div>
+                    </div>
+
+                    <h4>Su empresa</h4>
+
+                    <div class="col-9 ms-5 p-0 pl-lg-2 mt-1 mb-2 ">
+                        <div class="md-form mb-0">
+                            <label for="form_contact_nombre" class="active">Nombre de la empresa</label>
+                            <input formControlName="nombreEmp" type="text" name="form_contact_nombre_empresa" id="form_contact_nombre_empresa" class="form-control shadow" placeholder="Nombre de la empresa" required="">
+                        </div>
+                    </div>
+                    <div class="col-9 ms-5 p-0 pl-lg-2 mt-1 mb-2 ">
+                        <div class="md-form mb-0">
+                            <label for="form_contact_nom" class="active">Sitio internet de la empresa</label>
+                            <input formControlName="sitioEmp" type="text" name="form_contact_apellidos" id="form_contact_nom" class="form-control shadow" placeholder="Su sitio" required="">
+                        </div>
+                    </div>
+
+                    <div class="col-9 ms-5 p-0 pl-lg-2 mt-1 mb-2 required">
+                        <label for="validationCustom04" class="form-label">Tipo de empresa</label>
+                        <select formControlName="tipoEmp" class="form-select shadow" id="validationCustom04" required>
+                        <option selected disabled value="">Choose...</option>
+                        <option>Nueva, -12 meses</option>
+                        <option>Existante, +12 meses</option>
+                        </select>
+                        <div class="invalid-feedback">
+                        Please select a valid state.
+                        </div>
+                    </div>
+                    <div class="col-9 ms-5 p-0 pl-lg-2 mt-1 mb-2">
+                        <label for="validationCustom04" class="form-label">Categoria</label>
+                        <select formControlName="categoriaEmp" class="form-select shadow" id="validationCustom04" required>
+                        <option selected disabled value="">Choose...</option>
+                        <option>Agro-alimentaria</option>
+                        <option>T.P.E./P.M.E</option>
+                        <option>Logistica</option>
+                        <option>Negocio</option>
+                        <option>Redes y franquicia</option>
+                        <option>Start-up</option>
+                        <option>Otros</option>
+                        </select>
+                        <div class="invalid-feedback">
+                        Please select a valid state.
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div class="contHijaRight col-12 col-lg-6 p-0">
+            <div><h4 class="mb-4">Su proyecto</h4>
+                <form class="mx-4 me-5" action="">
+                    <div class="row justify-content-between formParams">
+                        <div class="firstCard col-lg-4 col-sm-6 card m-lg-3 form-check checkCard mb-3 shadow" style="width: 13rem;">
+                            <input formControlName="softErpBox" class="form-check-input checkParams " type="checkbox" value="">
+                            <div class="card-body mt-2"><h5 class="card-title text_card">Soft E.R.P. para recursos humanos</h5></div>
+                        </div>
+                        <div class="col-lg-4 col-sm-6 card m-lg-3 form-check checkCard mb-3 shadow" style="width: 13rem;">
+                            <input formControlName="gestionPersoBox" class="form-check-input checkParams" type="checkbox" value="">
+                            <div class="card-body mt-1"><h5 class="card-title text_card">Gestion administrativa del personnal</h5></div>
+                        </div>
+                        <div class="col-lg-4 col-sm-6 card m-lg-3 form-check checkCard mb-3 shadow" style="width: 13rem;">
+                            <input formControlName="gestionAusBox" class="form-check-input checkParams" type="checkbox" value="">
+                            <div class="card-body mt-4"><h5 class="card-title text_card">Gestion de las ausencias</h5></div>
+                        </div>
+                        <div class="col-lg-4 col-sm-6 card m-lg-3 form-check checkCard mb-3 shadow" style="width: 13rem;">
+                            <input formControlName="proceRhBox" class="form-check-input checkParams" type="checkbox" value="">
+                            <div class="card-body mt-3"><h5 class="card-title text_card">Automatisacion de processo RH</h5></div>
+                        </div>
+                        <div class="col-lg-4 col-sm-6 card m-lg-3 form-check checkCard mb-3 shadow" style="width: 13rem;">
+                            <input formControlName="remuBox" class="form-check-input checkParams" type="checkbox" value="">
+                            <div class="card-body mt-3"><h5 class="card-title text_card">Aventajas y remuneraciones</h5></div>
+                        </div>
+                        <div class="col-lg-4 col-sm-6 card m-lg-3 form-check checkCard mb-3 shadow" style="width: 13rem;">
+                            <input formControlName="otroBox" class="form-check-input checkParams" type="checkbox" value="">
+                            <div class="card-body mt-4 text-center"><h5 class="card-title text_card">Otro</h5></div>
+                        </div>
+                    </div>
+                </form>
+                <form class="mx-5" action="">
+                        <div class="form-floating mt-3 textAreaMarg">
+                            <textarea formControlName="textAreaBox" class="form-control TextArea shadow" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 200px"></textarea>
+                            <label class="ms-3" for="floating Textarea">Descripcion de su proyecto</label>
+                        </div>
+
+                        <div class=""><button class="btn btn-primary mt-4 shadow" style="width:15rem;" type="button" id="mandar_mensaje">Mandar mensaje</button></div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
