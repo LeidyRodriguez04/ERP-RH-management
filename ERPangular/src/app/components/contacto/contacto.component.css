@@ -138,4 +138,12 @@ box-sizing: border-box;
     margin-top: 20px;
 }
 
+.card-title0{
+margin-top: -6px;
+}
+
+.card-title1, .card-title2, .card-title3, .card-title4, .card-title5{
+    margin-top: -12px;
+    }
+
 

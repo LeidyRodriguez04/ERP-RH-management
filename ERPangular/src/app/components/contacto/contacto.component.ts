@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { Contacto } from 'src/app/models/contactoModel';
 
 @Component({
     selector: 'app-contacto',
@@ -35,6 +36,30 @@ export class ContactoComponent implements OnInit {
     }
 
     ngOnInit(): void {
+    }
+
+    mandarMensaje(){
+        const CONTACTO: Contacto = {
+            nombres: this.contactoForm.get('nombres')?.value,
+            apellidos: this.contactoForm.get('apellidos')?.value,
+            correo: this.contactoForm.get('correo')?.value,
+            telefono: this.contactoForm.get('telefono')?.value,
+            nombreEmp: this.contactoForm.get('nombreEmp')?.value,
+            sitioEmp: this.contactoForm.get('sitioEmp')?.value,
+            tipoEmp: this.contactoForm.get('tipoEmp')?.value,
+            categoriaEmp: this.contactoForm.get('categoriaEmp')?.value,
+            softErpBox: this.contactoForm.get('softErpBox')?.value,
+            gestPersoBox: this.contactoForm.get('gestPersoBox')?.value,
+            gestAusBox: this.contactoForm.get('gestAusBox')?.value,
+            ProceRhBox: this.contactoForm.get('ProceRhBox')?.value,
+            otroBox: this.contactoForm.get('otroBox')?.value
+
+            //verifier si argument du get est le meme que celui de la variable en debut de ligne?
+        }
+        console.log(CONTACTO);
+
+
+
     }
 
 }
