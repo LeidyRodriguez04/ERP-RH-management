@@ -10,6 +10,7 @@ import { InicioComponent } from './components/inicio/inicio.component';
 import { IngresoComponent } from './components/ingreso/ingreso.component';
 import { ContactoComponent } from './components/contacto/contacto.component';
 
+
 @NgModule({
   declarations: [
     AppComponent,
