@@ -1,7 +1,7 @@
 
 
 export class Contacto{
-    _id?: number
+    _id?: string;
     nombres : string;
     apellidos : string;
     correo : string;
@@ -32,11 +32,6 @@ export class Contacto{
         this.otroBox = otroBox
 
         //verifier si les arguments sont bien ecrit avec miguel
-
-
-
-
-
     }
 
 

@@ -9,7 +9,7 @@ import { Contacto } from 'src/app/models/contactoModel';
 })
 export class ContactoComponent implements OnInit {
 
-    contactoForm:   FormGroup;
+    contactoForm:FormGroup;
 
     regexMail = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/
     regexTelefono = /[\(]?[\+]?(\d{2}|\d{3})[\)]?[\s]?((\d{6}|\d{8})|(\d{3}[\*\.\-\s]){3}|(\d{2}[\*\.\-\s]){4}|(\d{4}[\*\.\-\s]){2})|\d{8}|\d{10}|\d{12}/
@@ -19,10 +19,10 @@ export class ContactoComponent implements OnInit {
         this.contactoForm = this.fb.group({
             nombres: ['', Validators.required],
             apellidos: ['', Validators.required],
-            correo: ['', [Validators.required,Validators.pattern("regexMail")]],
-            telefono: ['', [Validators.required,Validators.pattern("regexTelefono")]],
+            correo: ['', [Validators.required,Validators.pattern("this.regexMail")]],
+            telefono: ['', [Validators.required,Validators.pattern("this.regexTelefono")]],
             nombreEmp: ['', Validators.required],
-            sitioEmp: ['', [Validators.required,Validators.pattern("regexWeb")]],
+            sitioEmp: ['', [Validators.required,Validators.pattern("this.regexWeb")]],
             tipoEmp: ['', Validators.required],
             categoriaEmp: ['', Validators.required],
             softErpBox: ['', Validators.required],

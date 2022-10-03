@@ -51,7 +51,7 @@
     <div class="row align-items-start ms-5">
         <div class="col-12 col-lg-6 pb-5 p-0 m-0 d-flex flew-wrap">
             <div><h4 class="mb-4 mt-3">Sus datos</h4>
-                <form [formGroup]="contactoForm" class="row">
+                <form [formGroup]="contactoForm" (ngSubmit)="mandarMensaje" class="row">
                     <div class="col-9 ms-5 p-0 pl-lg-2 mt-1 mb-2 ">
                         <div class="md-form mb-0">
                             <label for="form_contact_nombre" class="active">Nombres</label>
@@ -70,8 +70,8 @@
                     <div class="col-9 ms-5 p-0 pl-lg-2 mt-1 mb-2 ">
                         <div class="md-form mb-0">
                             <label for="mail" class="active">Correo electronico</label>
-                            <input formControlName="correo" type="mail" name="form_contact_correo" id="form_contact_nom" class="form-control shadow" placeholder="Su correo electronico" required="">
-                            <span *ngIf="contactoForm.get('correo')?.hasError('required') && contactoForm.get('correo')?.touched" type="text" class="text-danger fw-bold ps1">correo invalido</span>
+                            <input formControlName="correo" type="email" name="form_contact_correo" id="form_contact_nom" class="form-control shadow" placeholder="Su correo electronico" required="">
+                            <span *ngIf="contactoForm.get('')?.hasError('required') && contactoForm.get('correo')?.touched" type="text" class="text-danger fw-bold ps1">nombre invalido</span>
                         </div>
                     </div>
                     <div class="col-9 ms-5 p-0 pl-lg-2 mt-1 mb-2 ">
@@ -130,7 +130,7 @@
 
         <div class="contHijaRight col-md-12 col-lg-6 p-0">
             <div><h4 class="mb-4">Su proyecto</h4>
-                <form [formGroup]="contactoForm" class="ms-3 me-5" action="">
+                <form [formGroup]="contactoForm" (ngSubmit)="mandarMensaje" class="ms-3 me-5" action="">
                     <div class="formParams">
 
                         <div class="card cardParams form-check checkCard mb-3 shadow">
