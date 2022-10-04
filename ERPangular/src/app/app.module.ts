@@ -12,7 +12,6 @@ import { ContactoComponent } from './components/contacto/contacto.component';
 import { NotFoundComponent } from './components/not-found/not-found.component';
 
 
-
 @NgModule({
   declarations: [
     AppComponent,
