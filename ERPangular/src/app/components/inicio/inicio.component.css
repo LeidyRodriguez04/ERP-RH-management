@@ -22,3 +22,18 @@ body{
 .iS2:hover{
     color: #43baff;
 }
+.divSlider1{
+    width: 407px;
+    height: 293px;
+}
+.divSlider{
+    width: 407px;
+}
+.imgSlider{
+    height: 293px;
+}
+.textoSlider{
+    position: absolute;
+    background: #262051;
+    color: #ffff;
+}

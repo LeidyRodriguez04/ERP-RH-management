@@ -12,15 +12,12 @@ export class InicioComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
-}
-export class CarouselHolderComponent {
   customOptions: OwlOptions = {
-    loop: true,
-    mouseDrag: false,
-    touchDrag: false,
-    pullDrag: false,
-    dots: false,
+    loop: false,
+    mouseDrag: true,
+    touchDrag: true,
+    pullDrag: true,
+    dots: true,
     navSpeed: 700,
     navText: ['', ''],
     responsive: {
@@ -34,9 +31,11 @@ export class CarouselHolderComponent {
         items: 3
       },
       940: {
-        items: 4
+        items: 3
       }
     },
     nav: true
   }
+
 }
+ 

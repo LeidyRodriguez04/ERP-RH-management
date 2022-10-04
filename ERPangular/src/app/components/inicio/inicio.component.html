@@ -75,11 +75,52 @@
     </div>
 </section>
 <section class="container-fluid">
-    <div>Some tags before</div>
+    <div></div>
     <owl-carousel-o [options]="customOptions">
-    <ng-template carouselSlide>Slide 1</ng-template>  
-    <ng-template carouselSlide>Slide 2</ng-template>  
-    <ng-template carouselSlide>Slide 3</ng-template>  
-    </owl-carousel-o>
-    <div>Some tags after</div>
+        <ng-template carouselSlide>
+            <div class="divSlider p-1">
+                <img src="../../../assets/img/slider6.jpeg" class="imgSlider" alt="">
+            </div>
+            <div class="textoSlider">
+                <h5>Ventajas y remuneracion</h5>
+                <p>Beneficios economicos</p>
+            </div>
+        </ng-template>  
+        <ng-template carouselSlide>
+            <div class="divSlider p-1">
+                <img src="../../../assets/img/slider8.jpeg" class="imgSlider" alt="">
+            </div>
+            <div class="textoSlider">
+                <h5>E.R.P</h5>
+                <p>Planificacion de recursos</p>
+            </div>
+        </ng-template>  
+        <ng-template carouselSlide>
+            <div class="divSlider p-1">
+                <img src="../../../assets/img/slider3.jpg" class="imgSlider" alt="">
+            </div>
+            <div class="textoSlider">
+                <h5>Gestion de Ausencias</h5>
+                <p>Control recurso humano</p>
+            </div>
+        </ng-template>  
+        <ng-template carouselSlide>
+            <div class="divSlider p-1">
+                <img src="../../../assets/img/slider5.jpeg" class="imgSlider" alt="">
+            </div>
+            <div class="textoSlider">
+                <h5>Automatizacion de procesos</h5>
+                <p>Facilidad para trabajar</p>
+            </div>
+        </ng-template>
+        <ng-template carouselSlide>
+            <div class="divSlider p-1">
+                <img src="../../../assets/img/slider1.jpg" class="imgSlider" alt="">
+            </div>
+            <div class="textoSlider">
+                <h5>Optimizacion de recursos</h5>
+                <p>Equipos/Humano</p>
+            </div>
+        </ng-template>  
+        </owl-carousel-o>
 </section>
