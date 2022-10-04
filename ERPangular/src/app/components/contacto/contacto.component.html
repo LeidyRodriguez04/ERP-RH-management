@@ -71,14 +71,14 @@
                         <div class="md-form mb-0">
                             <label for="mail" class="active">Correo electronico</label>
                             <input formControlName="correo" type="email" name="form_contact_correo" id="form_contact_nom" class="form-control shadow" placeholder="Su correo electronico" required="">
-                            <span *ngIf="contactoForm.get('')?.hasError('required') && contactoForm.get('correo')?.touched" type="text" class="text-danger fw-bold ps1">nombre invalido</span>
+                            <span *ngIf="contactoForm.get('correo')?.hasError('pattern') && contactoForm.get('correo')?.touched" type="text" class="text-danger fw-bold ps1">Correo invalido</span>
                         </div>
                     </div>
                     <div class="col-9 ms-5 p-0 pl-lg-2 mt-1 mb-2 ">
                         <div class="md-form mb-0">
                             <label for="form_contact_nom" class="active">Telefono</label>
                             <input formControlName="telefono" type="number" name="form_contact_nom" id="form_contact_nom" class="form-control shadow" placeholder="Su telefono" required="">
-                            <span *ngIf="contactoForm.get('telefono')?.hasError('required') && contactoForm.get('telefono')?.touched" type="text" class="text-danger fw-bold ps1">telefono invalido</span>
+                            <span *ngIf="contactoForm.get('telefono')?.hasError('pattern') && contactoForm.get('telefono')?.touched" type="text" class="text-danger fw-bold ps1">telefono invalido</span>
                         </div>
                     </div>
 
@@ -95,7 +95,7 @@
                         <div class="md-form mb-0">
                             <label for="form_contact_nom" class="active">Sitio internet de la empresa</label>
                             <input formControlName="sitioEmp" type="text" name="form_contact_apellidos" id="form_contact_nom" class="form-control shadow" placeholder="Su sitio" required="">
-                            <span *ngIf="contactoForm.get('sitioEmp')?.hasError('required') && contactoForm.get('sitioEmp')?.touched" type="text" class="text-danger fw-bold ps1">Sitio internet invalido</span>
+                            <span *ngIf="contactoForm.get('sitioEmp')?.hasError('pattern') && contactoForm.get('sitioEmp')?.touched" type="text" class="text-danger fw-bold ps1">Direccion invalido</span>
                         </div>
                     </div>
 
@@ -132,7 +132,6 @@
             <div><h4 class="mb-4">Su proyecto</h4>
                 <form [formGroup]="contactoForm" (ngSubmit)="mandarMensaje" class="ms-3 me-5" action="">
                     <div class="formParams">
-
                         <div class="card cardParams form-check checkCard mb-3 shadow">
                             <input formControlName="softErpBox" class="form-check-input checkParams " type="checkbox" value="">
                             <a class="mt-3" href=""><img src="assets/img/erp (2).png" alt="" style="width: 40px;" srcset=""></a>
@@ -140,27 +139,27 @@
                                 <h5 class="card-title0 text_card">Soft E.R.P.</h5></div>
                         </div>
                         <div class= "card cardParams form-check checkCard mb-3 shadow">
-                            <input formControlName="gestPersoBox" class="form-check-input checkParams" type="checkbox" value="">
+                            <input  class="form-check-input checkParams" type="checkbox" value="">
                             <a class="mt-3" href=""><img src="assets/img/administrateur.png" alt="" style="width: 40px;" srcset=""></a>
                             <div class="card-body"><h5 class="card-title1 text_card mb-1">Gestion administrativa</h5></div>
                         </div>
                         <div class= "card cardParams form-check checkCard mb-3 shadow">
-                            <input formControlName="gestAusBox" class="form-check-input checkParams" type="checkbox" value="">
+                            <input  class="form-check-input checkParams" type="checkbox" value="">
                             <a class="mt-3" href=""><img src="assets/img/la-discipline.png" alt="" style="width: 40px;" srcset=""></a>
                             <div class="card-body mt-0"><h5 class="card-title2 text_card">Gestion de las ausencias</h5></div>
                         </div>
                         <div class= "card cardParams form-check checkCard mb-3 shadow">
-                            <input formControlName="proceRhBox" class="form-check-input checkParams" type="checkbox" value="">
+                            <input  class="form-check-input checkParams" type="checkbox" value="">
                             <a class="mt-3" href=""><img src="assets/img/gestion-dequipe.png" alt="" style="width: 40px;" srcset=""></a>
-                            <div class="card-body mt-0"><h5 class="card-title3 text_card">Automatisacion de processo RH</h5></div>
+                            <div class="card-body mt-0"><h5 class="card-title3 text_card">Automatizacion de proceso RH</h5></div>
                         </div>
                         <div class= "card cardParams form-check checkCard mb-3 shadow">
-                            <input formControlName="remuBox" class="form-check-input checkParams" type="checkbox" value="">
+                            <input  class="form-check-input checkParams" type="checkbox" value="">
                             <a class="mt-3" href=""><img src="assets/img/compensation.png" alt="" style="width: 40px;" srcset=""></a>
-                            <div class="card-body mt-0"><h5 class="card-title4 text_card">Aventajas y remuneraciones</h5></div>
+                            <div class="card-body mt-0"><h5 class="card-title4 text_card">Ventajas y remuneraciones</h5></div>
                         </div>
                         <div class= "card cardParams form-check checkCard mb-3 shadow">
-                            <input formControlName="otroBox" class="form-check-input checkParams" type="checkbox" value="">
+                            <input  class="form-check-input checkParams" type="checkbox" value="">
                             <a class="mt-3" href=""><img src="assets/img/execution.png" alt="" style="width: 40px;" srcset=""></a>
                             <div class="card-body mt-0 text-center"><h5 class="card-title5 text_card">Otro</h5></div>
                         </div>
@@ -168,13 +167,13 @@
                 </form>
                 <form class="ms-4 me-5" action="">
                         <div class="form-floating mt-3 textAreaMarg">
-                            <textarea class="form-control" placeholder="comentario del proyecto" id="floatingTextarea2" style="height: 200px"></textarea>
+                            <textarea formControlName="mensajeBox" class="form-control" placeholder="comentario del proyecto" id="floatingTextarea2" style="height: 200px"></textarea>
                             <label for="floatingTextarea2">Descripcion del proyecto</label>
-                            <span *ngIf="contactoForm.get('tipoEmp')?.hasError('required') && contactoForm.get('tipoEmp')?.touched" type="text" class="text-danger fw-bold ps1">No quiere explicarnos mas?.</span>
+                            <span *ngIf="contactoForm.get('mensajeBox')?.touched" type="text" class="text-danger fw-bold ps1">Explicanos màs de tu proyecto, por favor</span>
                         </div>
 
 
-                        <div class=""><button class="btn btn-primary mt-4 shadow mandarStyle" type="button" id="mandar_mensaje">Mandar mensaje</button></div>
+                        <div><button class="btn btn-primary mt-4 shadow mandarStyle" type="button" id="mandar_mensaje" >Mandar mensaje</button></div>
                 </form>
             </div>
         </div>
