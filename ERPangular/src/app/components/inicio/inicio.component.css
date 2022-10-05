@@ -32,8 +32,34 @@ body{
 .imgSlider{
     height: 293px;
 }
+.imgSlider:hover{
+    background: yellow;
+}
 .textoSlider{
-    position: absolute;
     background: #262051;
+    position: relative;
+    top: -50px;
+    left: 50px;
+}
+.textoSlider h5{
     color: #ffff;
+    font-size: 22px;
+}
+.textoSlider p{
+    color: #aeaacb;
+    margin: 0;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+@media (max-width: 800px) {
+    .parrafoS2 {
+        display: none;
+    }
+    .iS2, .titulo{
+        width: 15%;
+        font-size: 1.5rem;
+        margin: 0 10px;
+        justify-content: space-between;
+    }
 }
