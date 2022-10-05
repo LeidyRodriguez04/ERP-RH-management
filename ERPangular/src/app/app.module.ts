@@ -10,6 +10,8 @@ import { InicioComponent } from './components/inicio/inicio.component';
 import { IngresoComponent } from './components/ingreso/ingreso.component';
 import { ContactoComponent } from './components/contacto/contacto.component';
 import { NotFoundComponent } from './components/not-found/not-found.component';
+import { DashboardComponent } from './components/dashboard/dashboard.component';
+import { ListarPersonalComponent } from './components/listar-personal/listar-personal.component';
 
 
 @NgModule({
@@ -20,7 +22,9 @@ import { NotFoundComponent } from './components/not-found/not-found.component';
     InicioComponent,
     IngresoComponent,
     ContactoComponent,
-    NotFoundComponent
+    NotFoundComponent,
+    DashboardComponent,
+    ListarPersonalComponent
   ],
   imports: [
     BrowserModule,
