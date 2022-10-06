@@ -11,6 +11,10 @@ import { FooterComponent } from './components/footer/footer.component';
 import { InicioComponent } from './components/inicio/inicio.component';
 import { IngresoComponent } from './components/ingreso/ingreso.component';
 import { ContactoComponent } from './components/contacto/contacto.component';
+import { NotFoundComponent } from './components/not-found/not-found.component';
+import { DashboardComponent } from './components/dashboard/dashboard.component';
+import { ListarPersonalComponent } from './components/listar-personal/listar-personal.component';
+
 
 @NgModule({
   declarations: [
@@ -20,6 +24,9 @@ import { ContactoComponent } from './components/contacto/contacto.component';
     InicioComponent,
     IngresoComponent,
     ContactoComponent,
+    NotFoundComponent,
+    DashboardComponent,
+    ListarPersonalComponent
   ],
   imports: [
     BrowserModule,
