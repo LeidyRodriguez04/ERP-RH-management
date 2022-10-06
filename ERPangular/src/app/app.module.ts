@@ -12,6 +12,7 @@ import { ContactoComponent } from './components/contacto/contacto.component';
 import { NotFoundComponent } from './components/not-found/not-found.component';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { ListarPersonalComponent } from './components/listar-personal/listar-personal.component';
+import { RegistroPersonalComponent } from './components/registro-personal/registro-personal.component';
 
 
 @NgModule({
@@ -24,7 +25,8 @@ import { ListarPersonalComponent } from './components/listar-personal/listar-per
     ContactoComponent,
     NotFoundComponent,
     DashboardComponent,
-    ListarPersonalComponent
+    ListarPersonalComponent,
+    RegistroPersonalComponent,
   ],
   imports: [
     BrowserModule,
