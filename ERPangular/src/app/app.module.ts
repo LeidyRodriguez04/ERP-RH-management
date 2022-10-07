@@ -4,6 +4,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { CarouselModule } from 'ngx-owl-carousel-o';
 
+
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
@@ -32,9 +33,15 @@ import { ListarPersonalComponent } from './components/listar-personal/listar-per
   imports: [
     BrowserModule,
     AppRoutingModule,
+<<<<<<<<< Temporary merge branch 1
+    ReactiveFormsModule
+=========
     ReactiveFormsModule,
     BrowserAnimationsModule,
     CarouselModule
+=======
+    ReactiveFormsModule
+>>>>>>> 3a1e8c093348b9fed55f2497b15d0fefcde231a6
   ],
   providers: [],
   bootstrap: [AppComponent]
