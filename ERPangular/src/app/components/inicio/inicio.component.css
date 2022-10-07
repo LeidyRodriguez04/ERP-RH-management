@@ -1,26 +1,24 @@
-body{
-    font-family: "Nunito Sans", sans-serif;
-}
+
 .section1{
     background-image: url("/assets/img/imgsection1.jpg");
     background-position: 50% 50%;
 }
 .btnsection1{
     border: none;
-    background: #43baff;
+    background: var(--color-azul);
     text-decoration: none;
     padding: 20px 35px;
 }
 .parrafoS2{
-    color: #6d6d6d;
+    color: var(color-parrafo-inicio);
     line-height: 1.875;
     font-weight: 400;
 }
 .iS2{
-    color: #7e58c5;
+    color: var(--color-morado-inicio);
 }
 .iS2:hover{
-    color: #43baff;
+    color: var(--color-azul);
 }
 .divSlider1{
     width: 407px;
@@ -32,33 +30,29 @@ body{
 .imgSlider{
     height: 293px;
 }
-.imgSlider:hover{
-    background: yellow;
-}
 .textoSlider{
-    background: #262051;
+    background: var(--color-morado-slider);
     position: relative;
     top: -50px;
     left: 50px;
 }
 .textoSlider h5{
-    color: #ffff;
-    font-size: 22px;
+    color: var(--color-blanco);
+    font-size: var(--sizeletra-slider);
 }
 .textoSlider p{
-    color: #aeaacb;
+    color: var(--color-morado-sliderp);
     margin: 0;
-    font-size: 14px;
+    font-size: var(--sizeletra-sliderp);
     font-weight: 700;
 }
-
 @media (max-width: 800px) {
     .parrafoS2 {
         display: none;
     }
     .iS2, .titulo{
         width: 15%;
-        font-size: 1.5rem;
+        font-size: var(--sizeletra);
         margin: 0 10px;
         justify-content: space-between;
     }

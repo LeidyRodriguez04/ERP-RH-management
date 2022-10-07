@@ -1,13 +1,10 @@
 
-nav{
-    font-family: "Nunito Sans", sans-serif;
-}
 .bgNav1{
-    background-color: #141D38;
+    background-color: var(--color-morado);
 }
 .textDecorationNoneColor1{
     text-decoration: none !important;
-    color: #B5B5B5;
+    color: var(--color-gris);
 }
 .textDecorationNoneColor2{
     text-decoration: none !important;
@@ -15,25 +12,19 @@ nav{
 }
 .border1{
     box-sizing: border-box;
-    border-left: 2px solid #2C344C;
+    border-left: 2px solid var(--color-moradoClaro);
 }
 .border2{
     box-sizing: border-box;
-    border-left: 2px solid #2C344C;
-    border-right: 2px solid #2C344C;
+    border-left: 2px solid var(--color-moradoClaro);
+    border-right: 2px solid var(--color-moradoClaro);
     padding-right: 5px;
 }
 .sizeColor{
     text-decoration: none;
-    font-size: 12px ;
-    color: #000000;
+    font-size: var(--sizeletra) ;
+    color: var(--color-negro);
 }
-.sizeColor:hover {
-    color: #43baff;
-}
-.textDecorationNoneColor1:hover {
-    color: #43baff;
-}
-.textDecorationNoneColor2:hover {
-    color: #43baff;
+.sizeColor:hover,.textDecorationNoneColor1:hover, .textDecorationNoneColor2:hover {
+    color: var(--color-azul);
 }
