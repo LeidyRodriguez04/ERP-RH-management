@@ -13,6 +13,8 @@
     --color-morado-inicio: #7e58c5;
     --color-morado-slider: #262051;
     --color-morado-sliderp: #aeaacb;
+    --color-fondo-formulario: linear-gradient(90deg, #00deff 0%, #7141b1 100%);
+    --color-fondo-input: rgba(255, 255, 255, 0.3);
 }
 body{
     overflow-x: hidden;

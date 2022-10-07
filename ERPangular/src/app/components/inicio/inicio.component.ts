@@ -10,23 +10,23 @@ export class InicioComponent implements OnInit {
 
     constructor() { }
 
-  ngOnInit(): void {
-  }
-  customOptions: OwlOptions = {
-    loop:false,
-    margin:0,
-    nav: false,
-    responsive:{
-        0:{
-            items:1,
-        },
-        700:{
-            items:2,
-        },
-        1000:{
-            items:3,
-            loop:false
+    ngOnInit(): void {
+    }
+    customOptions: OwlOptions = {
+        loop:false,
+        margin:0,
+        nav: false,
+        responsive:{
+            0:{
+                items:1,
+            },
+            700:{
+                items:2,
+            },
+            1000:{
+                items:3,
+                loop:false
+            }
         }
     }
-  }
 }
