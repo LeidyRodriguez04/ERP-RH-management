@@ -16,6 +16,7 @@ import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { ListarPersonalComponent } from './components/listar-personal/listar-personal.component';
 
 
+
 @NgModule({
   declarations: [
     AppComponent,

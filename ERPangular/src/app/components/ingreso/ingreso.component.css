@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background:url(../assets/img/human-resources-symbols-on-concrete-background.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.contenedorFormulario{
+    position: relative;
+    background: #4193ea;
+    width: 100%;
+    max-width: 500px;
+    margin: 48px auto;
+    color: rgb #da2020;
+    border-radius: 5px;
+    
+
+}
+
+.contenedorFormulario .toggle{
+    position: absolute;
+    top: 7px;
+    right: 7px;
+    width: 100px;
+    height: 30px;
+    font-size: 12px;
+    line-height: 25px;
+    text-align: center;
+    border-top: 2px solid #da2020;
+    border-bottom: 2px solid #da2020;
+
+}
+
+.contenedorFormulario .toggle span {
+    letter-spacing: 2px;
+}
+
+.contenedorFormulario .toggle:hover{
+    border-top: 2px solid #1425df;
+    border-bottom: 2px solid #1425df;
+}
+
+.contenedorFormulario h2{
+    margin: 0 0 28px 0;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1;
+}
+
+.contenedorFormulario input[type="text"],
+.contenedorFormulario input[type="password"],
+.contenedorFormulario input[type="email"]{
+    outline: none;
+    background: #14d698;
+    display: block;
+    width: 100%;
+    padding: 10px 15px;
+    color: aliceblue;
+    border: none;
+    border-radius: 2px;
+    border-bottom: 4px solid #0d8861;
+    font-size: 14px;
+    font-weight: normal;
+    margin: 0 0 20px 0;
+    transition: all .5s;
+}
+
+.contenedorFormulario input[type="text"]:focus,
+.contenedorFormulario input[type="password"]:focus,
+.contenedorFormulario input[type="email"]:focus{
+    border-bottom:px solid #318469 ;
+
+}
+
+.contenedorFormulario input[type="submit"]{
+    background: #0eb90e;
+    color: #fff;
+    border: none;
+    width: 100%;
+    padding: 10px 0;
+    font-weight: normal;
+    letter-spacing: 2px;
+    cursor: pointer;
+    transition: all .5s;
+
+}
+
+.contenedorFormulario input[type="submit"]:hover{
+    background: #1425df;
+}
+
+.contenedorFormulario .reset-contraseña{
+    background: #295323;
+    width: 100%;
+    padding: 15px 0;
+    text-align: center;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.contenedorFormulario .reset-contraseña a {
+    color: #bfdf0f;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.contenedorFormulario .formulario{
+    padding: 40px;
+    display: none;
+}
+
+.contenedorFormulario .formulario:nth-child(2){
+    display: block;
+}
