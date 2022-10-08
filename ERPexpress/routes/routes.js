@@ -12,5 +12,4 @@ router.get('/contacto/:id', controllerContacto.obtenerContactoEspecifico)
 module.exports = router
 
 
-// prueba commit master. porque no estoy en mi rama..... uchhhhh
-// prueba commit master. porque no estoy en mi rama..... uchhhhh
+
