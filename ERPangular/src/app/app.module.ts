@@ -33,15 +33,9 @@ import { ListarPersonalComponent } from './components/listar-personal/listar-per
   imports: [
     BrowserModule,
     AppRoutingModule,
-<<<<<<<<< Temporary merge branch 1
-    ReactiveFormsModule
-=========
     ReactiveFormsModule,
     BrowserAnimationsModule,
     CarouselModule
-=======
-    ReactiveFormsModule
->>>>>>> 3a1e8c093348b9fed55f2497b15d0fefcde231a6
   ],
   providers: [],
   bootstrap: [AppComponent]
