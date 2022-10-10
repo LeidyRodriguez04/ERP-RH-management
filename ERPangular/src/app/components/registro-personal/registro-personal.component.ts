@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {FormBuilder ,FormGroup, Validators } from '@angular/forms';
+import { Personal } from 'src/app/models/personal';
 
 @Component({
   selector: 'app-registro-personal',
@@ -27,7 +28,17 @@ export class RegistroPersonalComponent implements OnInit {
   }
 
   agregarPersonal(){
-    console.log(this.personalForm)
+    const PERSONAL: Personal = {
+      nombre: this.personalForm.get('nombre')?.value,
+      apellido: this.personalForm.get('apellido')?.value,
+      tipoIdentificacion: this.personalForm.get('tipoIdentificacion')?.value,
+      numeroIdentificacion: this.personalForm.get('numeroIdentificacion')?.value,
+      genero: this.personalForm.get('genero')?.value,
+      telefono: this.personalForm.get('telefono')?.value,
+      direccion: this.personalForm.get('direccion')?.value,
+      cargo: this.personalForm.get('cargo')?.value,
+    }
+    console.log(PERSONAL)
   }
 
 }

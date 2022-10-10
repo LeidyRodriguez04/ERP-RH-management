@@ -2,13 +2,23 @@ export class Personal {
     _id?: string;
     nombre: string;
     apellido: string;
-    edad: string;
-    sexo: number;
+    tipoIdentificacion: Number;
+    numeroIdentificacion: Number;
+    genero: string;
+    telefono: number;
+    direccion: string;
+    cargo: string;
 
-    constructor(nombre: string, apellido: string, edad: string, sexo: number) {
+    constructor(nombre: string, apellido: string, tipoIdentificacion: Number, numeroIdentificacion: Number, genero: string, telefono: number, direccion: string, cargo: string) {
         this.nombre = nombre;
         this.apellido = apellido;
-        this.edad = edad;
-        this.sexo = sexo;
+        this.tipoIdentificacion = tipoIdentificacion; 
+        this.numeroIdentificacion = numeroIdentificacion;
+        this.genero = genero;
+        this.telefono = telefono;
+        this.direccion = direccion;
+        this.cargo = cargo;
+
     }
+
 }
