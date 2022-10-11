@@ -33,22 +33,26 @@ exports.actualizarContacto = async (req,res)=>{
 }
 exports.borrarContacto = async (req,res)=>{
     console.log('esta borrando todos los contactos de la BD ')
-    // try {
-    //     let contacto;
-    //     contacto = new Producto(req.body)
-    //     await contacto.save()
-    //     res.send(contacto)
-    // } catch (error) {
-    //     console.log(error)
-    //     res.status(500).send('hay un problema ... comuniquese con el administrador')
-    // }
-}
+    try {
+        let contacto = await Contacto.findById(req.params.id)
+        
+        if (!contacto) {
+            res.status(404).json({mensaje: 'el contacto solocitado no existe'})
+        }
+        await Contacto.findOneAndDelete(_id = req.params.id)
+        res.json({ msg: "contacto borrado"})
+        
+    } catch (error) {
+        console.log(error)
+        res.status(500).send('hay un problema ... comuniquese con el administrador')
+    }
+} // ok
 exports.obtenerContactoEspecifico = async (req,res)=>{
     console.log('esta dando un contacto especifico de la BD')
     try {
         let contacto_especifico = await Contacto.findById(req.params.id)
         
-        if (!contacto_especifico){
+        if(!contacto_especifico){
             res.status(404).json({mensaje: 'el contacto solocitado no existe'})
         }else{
             res.send(contacto_especifico)     
@@ -58,4 +62,4 @@ exports.obtenerContactoEspecifico = async (req,res)=>{
         console.log(error)
         res.status(500).send('hay un problema ... comuniquese con el administrador')
     }
-}
+}//ok
