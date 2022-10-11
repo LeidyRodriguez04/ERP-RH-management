@@ -16,9 +16,9 @@ html, body {
 }
 
 .subtitle{
-    color: #B1B2FF;
-    font-weight: 900;
-    font-size: 15px;
+    color: #8e43af;
+    font-weight: 1200;
+    font-size: 18px;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     letter-spacing: 3px;
 
@@ -36,10 +36,16 @@ html, body {
     background-image: url("https://cdn.bizneo.com/blog/wp-content/uploads/2022/02/ERP-RH.jpeg");
 }
 
+.H2C2Params{
+    font-weight: 800;
+    color: #541870;
+}
+
 .discover{
     font-size: 1.5rem;
+    font-weight: 600;
     line-height: 4rem;
-    color: white;
+    color: #541870;
     ;
 }
 
@@ -86,8 +92,55 @@ html, body {
 }
 
 .numParamsP{
-    margin-block: -13px;
+    margin-block: -18px;
 }
+
+.text-3D{
+    text-transform: uppercase;
+    --color:0, 0, 0;
+    font-size: 35px;
+    letter-spacing: 10px;
+    font-weight: 800;
+    color: white;
+    text-shadow: 
+    0 1px 0 #ccc, 
+    0 2px 0 #acacac,
+    0 3px 0 #a0a0a0,
+    0 4px 0 #9b9a9a,
+    0 5px 0 #888787,
+    0 0 1px rgba(var(--color),.1),
+    0 0 2px rgba(var(--color),.1),
+    0 1px 3px rgba(var(--color),.3),
+    0 3px 4px rgba(var(--color),.3),
+    0 5px 5px rgba(var(--color),.25),
+    0 10px 6px rgba(var(--color),.2),
+    0 20px 20px rgba(var(--color),.15);
+    
+    
+    
+    
+    }
+    
+    .numero-3D{
+        text-transform: uppercase;
+        --color:0, 0, 0;
+        font-size: 55px;
+        font-weight: 800;
+        color: #c8a8d6;
+        text-shadow: 
+        0 1px 0 #e8c3f9, 
+        0 2px 0 #c8a8d6,
+        0 3px 0 rgb(161, 135, 173),
+        0 4px 0 rgb(141, 119, 152),
+        0 5px 0 rgb(106, 89, 115),
+        0 0 1px rgba(var(--color),.1),
+        0 0 5px rgba(var(--color),.1),
+        0 1px 3px rgba(var(--color),.3),
+        0 3px 5px rgba(var(--color),.3),
+        0 5px 10px rgba(var(--color),.25),
+        0 10px 10px rgba(var(--color),.2),
+        0 20px 20px rgba(var(--color),.15);
+        }
 
 .card-process2{
     background:white;
@@ -103,6 +156,11 @@ html, body {
     background-image: linear-gradient(90deg, #00deff 0%, #7141b1 90%);
     color: #fff;
     padding-bottom: 100px;
+
+}
+
+.placeholder{
+    color: #c8a8d6;
 }
 
 .formParams{
@@ -135,12 +193,6 @@ box-sizing: border-box;
 
 }
 
-.mandarStyle{
-    width: 15rem;
-    position: absolute;
-    right: 50px;
-    margin-top: 20px;
-}
 
 .card-title0{
 margin-top: -6px;
@@ -151,11 +203,7 @@ margin-bottom: -4px;
     margin-top: -12px;
     }
 
-.btnParams{
-    background-image: linear-gradient(90deg, #AAC4FF 10%, #5010a4 90%);
-    color: #fff;
-    border: #fff 1px solid;
-}
+
 
 .spanParams{
     color: #5010a4;
@@ -167,5 +215,42 @@ margin-bottom: -4px;
     margin-inline: -15px;
 
 }
+
+.spanParamsBox2{
+    color: crimson;
+    font-size: 10px;
+    margin-inline: -15px;
+    padding-bottom: 8px;
+}
+
+.boxSizeEnvio{
+    width: 400px;
+    height: 200px;
+    border: 1px solid black;
+    border-radius: 16px;
+
+}
+
+.btnParams{
+    background-image: linear-gradient(90deg, #AAC4FF 10%, #5010a4 90%);
+    font-size: 20px;
+    color: #fff;
+    border: #fff 1px solid;
+    width: 15rem;
+    position: absolute;
+    right: 50px;
+    margin-top: 20px;
+    --color:0, 0, 0;
+    font-size: 12px;
+    letter-spacing: 3px;
+    font-weight: 800;
+    color: white;
+    ;
+
+    
+    
+}
+
+
 
 

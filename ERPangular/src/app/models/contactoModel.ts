@@ -10,10 +10,10 @@ export class Contacto{
     sitioEmp : string;
     tipoEmp : string;
     categoriaEmp : string;
-    arrayUsuario : any;
+    listUser : any;
     mensajeBox : string
 
-    constructor(nombres : string, apellidos : string, correo : string, telefono : number, nombreEmp : string, sitioEmp : string, tipoEmp : string, categoriaEmp : string, arrayUsuario : any, mensajeBox : string){
+    constructor(nombres : string, apellidos : string, correo : string, telefono : number, nombreEmp : string, sitioEmp : string, tipoEmp : string, categoriaEmp : string, listUser : any, mensajeBox : string){
         this.nombres = nombres;
         this.apellidos = apellidos;
         this.correo = correo;
@@ -22,7 +22,7 @@ export class Contacto{
         this.sitioEmp = sitioEmp;
         this.tipoEmp = tipoEmp;
         this.categoriaEmp = categoriaEmp;
-        this.arrayUsuario = arrayUsuario;
+        this.listUser = listUser;
         this.mensajeBox = mensajeBox
 
     }
