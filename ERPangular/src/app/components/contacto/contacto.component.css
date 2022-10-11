@@ -16,9 +16,9 @@ html, body {
 }
 
 .subtitle{
-    color: #005DEC;
-    font-weight: 900;
-    font-size: 15px;
+    color: #8e43af;
+    font-weight: 1200;
+    font-size: 18px;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     letter-spacing: 3px;
 
@@ -32,14 +32,20 @@ html, body {
 
 /* Params block container 2 */
 .container2Params{
-    background-color: #bed1ed;
+    background-color: #5010a4;
     background-image: url("https://cdn.bizneo.com/blog/wp-content/uploads/2022/02/ERP-RH.jpeg");
+}
+
+.H2C2Params{
+    font-weight: 800;
+    color: #541870;
 }
 
 .discover{
     font-size: 1.5rem;
+    font-weight: 600;
     line-height: 4rem;
-    color: #4F4F4F;
+    color: #541870;
     ;
 }
 
@@ -51,7 +57,7 @@ html, body {
 .card-process1{
     margin-top: 100px;
     background:white;
-    border: 1px solid #005DEC;
+    border: 1px solid #B1B2FF;
     border-radius: 8px;
     font-weight: 100;
     margin-right: 90px;
@@ -73,11 +79,11 @@ html, body {
 .numeroParams{
     background: #f2f4ff;
     border-radius: 60%;
-    border: #005DEC 1px solid;
+    border: #5010a4 1px solid;
     font-weight: 700;
     font-size: 3.5rem;
     line-height:6.2rem;
-    color:  #bed1ed;
+    color:  #B1B2FF;
     width: 72px;
     height: 72px;
     text-align:center;
@@ -86,12 +92,59 @@ html, body {
 }
 
 .numParamsP{
-    margin-block: -13px;
+    margin-block: -18px;
 }
+
+.text-3D{
+    text-transform: uppercase;
+    --color:0, 0, 0;
+    font-size: 35px;
+    letter-spacing: 10px;
+    font-weight: 800;
+    color: white;
+    text-shadow: 
+    0 1px 0 #ccc, 
+    0 2px 0 #acacac,
+    0 3px 0 #a0a0a0,
+    0 4px 0 #9b9a9a,
+    0 5px 0 #888787,
+    0 0 1px rgba(var(--color),.1),
+    0 0 2px rgba(var(--color),.1),
+    0 1px 3px rgba(var(--color),.3),
+    0 3px 4px rgba(var(--color),.3),
+    0 5px 5px rgba(var(--color),.25),
+    0 10px 6px rgba(var(--color),.2),
+    0 20px 20px rgba(var(--color),.15);
+    
+    
+    
+    
+    }
+    
+    .numero-3D{
+        text-transform: uppercase;
+        --color:0, 0, 0;
+        font-size: 55px;
+        font-weight: 800;
+        color: #c8a8d6;
+        text-shadow: 
+        0 1px 0 #e8c3f9, 
+        0 2px 0 #c8a8d6,
+        0 3px 0 rgb(161, 135, 173),
+        0 4px 0 rgb(141, 119, 152),
+        0 5px 0 rgb(106, 89, 115),
+        0 0 1px rgba(var(--color),.1),
+        0 0 5px rgba(var(--color),.1),
+        0 1px 3px rgba(var(--color),.3),
+        0 3px 5px rgba(var(--color),.3),
+        0 5px 10px rgba(var(--color),.25),
+        0 10px 10px rgba(var(--color),.2),
+        0 20px 20px rgba(var(--color),.15);
+        }
 
 .card-process2{
     background:white;
-    border: 1px solid #005DEC;
+    border: 1px solid #5010a4;
     border-radius: 8px;
     font-weight: 100;
     margin: -80px 0px -50px 0;
@@ -100,9 +153,14 @@ html, body {
 
 /* container3 */
 .container3Params{
-    background-image: linear-gradient(90deg, #00deff 0%, #7141b1 100%);
+    background-image: linear-gradient(90deg, #00deff 0%, #7141b1 90%);
     color: #fff;
     padding-bottom: 100px;
+
+}
+
+.placeholder{
+    color: #c8a8d6;
 }
 
 .formParams{
@@ -114,7 +172,7 @@ html, body {
 }
 .cardParams {
 width: 150px;
-height: 100px;
+height: 120px;
 margin: 14px;
 border: 1px solid #ccc;
 border-radius: 8px;
@@ -132,34 +190,67 @@ box-sizing: border-box;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     margin-left: -10px;
     color: #5010a4;
+
 }
 
-.mandarStyle{
-    width: 15rem;
-    position: absolute;
-    right: 50px;
-    margin-top: 20px;
-}
 
 .card-title0{
 margin-top: -6px;
+margin-bottom: -4px;
 }
 
 .card-title1, .card-title2, .card-title3, .card-title4, .card-title5{
     margin-top: -12px;
     }
 
-.btnParams{
-    background-image: linear-gradient(90deg, #7553a2 0%, #5010a4 100%);
-    color: #fff;
-    border: #fff 1px solid;
 
-
-}
 
 .spanParams{
-    background: white;
-    opacity: 0,5;
+    color: #5010a4;
 }
+
+.spanParamsBox{
+    color: #5010a4;
+    font-size: 10px;
+    margin-inline: -15px;
+
+}
+
+.spanParamsBox2{
+    color: crimson;
+    font-size: 10px;
+    margin-inline: -15px;
+    padding-bottom: 8px;
+}
+
+.boxSizeEnvio{
+    width: 400px;
+    height: 200px;
+    border: 1px solid black;
+    border-radius: 16px;
+
+}
+
+.btnParams{
+    background-image: linear-gradient(90deg, #AAC4FF 10%, #5010a4 90%);
+    font-size: 20px;
+    color: #fff;
+    border: #fff 1px solid;
+    width: 15rem;
+    position: absolute;
+    right: 50px;
+    margin-top: 20px;
+    --color:0, 0, 0;
+    font-size: 12px;
+    letter-spacing: 3px;
+    font-weight: 800;
+    color: white;
+    ;
+
+    
+    
+}
+
+
 
 

@@ -1,18 +1,18 @@
 
-footer{
-    font-family: "Nunito Sans", sans-serif;
-}
 .backFooter{
-    background-color: #201D3C;
+    background-color: var(--color-morado);
 }
 .copyright-text{
-    color: #B5B5B5;
-    font-size: 15px;
+    color: var(--color-gris);
+    font-size: var(--sizeletra);
 }
 .textDecorationNoneColor1{
     text-decoration: none !important;
-    color: #B5B5B5;
+    color: var(--color-gris);
 }
 .textDecorationNoneColor1:hover {
-    color: #43baff;
+    color: var(--color-azul);
+}
+.logoFooter{
+    border-radius: 100px;
 }

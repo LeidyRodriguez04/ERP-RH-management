@@ -21,7 +21,7 @@
                 <div class="border2 p-2">
                     <a class="textDecorationNoneColor1" href="mailto:engitech@mail.com">
                         <i class="fa-regular fa-envelope text-light pe-1"></i>
-                        engitech@mail.com</a>
+                        rh_management@mail.com</a>
                 </div>
             </div>
         </div>
@@ -34,54 +34,35 @@
                     aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <a class="navbar-brand me-5 ms-3" href="#"><img width="80" height="70" src="" alt="LOGO"></a>
+                <a class="navbar-brand me-5 ms-3" href="#">
+                    <img width="75" height="75" src="../../../assets/img/logo.jpeg">
+                </a>
             </div>
             <div class="collapse navbar-collapse pt-2 pb-2" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item dropdown">
-                        <a class="textDecorationNoneColor2 dropdown-toggle p-3 fw-bold" href="#" role="button"
+                        <a class="textDecorationNoneColor2 dropdown-toggle p-3 fw-bold" routerLink="/"
                             data-bs-toggle="dropdown" aria-expanded="false">
                             Inicio
                         </a>
-                        <ul class="dropdown-menu pb-3">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li>
-                                <hr class="dropdown-divider">
-                            </li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li>
-                                <hr class="dropdown-divider">
-                            </li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
-                        </ul>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="textDecorationNoneColor2 dropdown-toggle p-3 fw-bold" href="#" role="button"
                             data-bs-toggle="dropdown" aria-expanded="false">
                             Servicios
                         </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li>
-                                <hr class="dropdown-divider">
-                            </li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li>
-                                <hr class="dropdown-divider">
-                            </li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
-                        </ul>
                     </li>
                     <li class="nav-item">
-                        <a class="textDecorationNoneColor2 p-3 fw-bold" href="#">Contactanos</a>
+                        <a class="textDecorationNoneColor2 p-3 fw-bold" routerLink="/contacto">Contactanos</a>
                     </li>
                 </ul>
             </div>
             <div class="d-flex flex-row">
                 <!-- <a class="sizeColor d-flex flex-column align-items-center pe-2" href=""><i class="fa-solid fa-user-plus"></i>Registrarse</a> -->
                 <div class="d-flex flex-row align-items-center">
-                    <a class="sizeColor d-flex flex-column align-items-center pe-2" href=""><i
-                            class="fa-solid fa-user-plus"></i>Iniciar sesion</a>
+                    <a class="sizeColor d-flex flex-column align-items-center pe-2" routerLink="/ingreso">
+                        <i class="fa-solid fa-user-plus"></i>Iniciar sesion
+                    </a>
                 </div>
             </div>
         </div>
