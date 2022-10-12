@@ -1,20 +1,19 @@
-<section>
+<section class="container-fluide containerParams">
     <div>
-        <table class="table table-hover">
+        <h1 class="text-center text-black fw-3 text-blod pt-3 pb-5"> Seguimiento de los correos de los clientes</h1>
+        <table class="container table table-hover">
             <thead>
                 <tr>
-                    <th>Fecha</th>
-                    <th>Correo</th>
-                    <th>Abrir</th>
-                    <th>Borrar</th>
+                    <th class="text-lg-center">Nombre del cliente</th>
+                    <th class="text-lg-center">Abrir</th>
+                    <th class="text-lg-center">Borrar</th>
                 </tr>
             </thead>
             <tbody>
-                <tr>
-                    <th></th>
-                    <th></th>
-                    <th><button type="button" class="btn btn-warning">Leer</button></th>
-                    <th><button type="button" class="btn btn-danger">Borrar</button></th>
+                <tr *ngFor="let correo of listaCorreos">
+                    <th style="width: 550px;">{{correo.apellidos}}</th>
+                    <th class="" style="width: 150px;"><button type="button" class="btn btn-warning ms-2" style="width: 90px;">Leer</button></th>
+                    <th class="" style="width: 150px;"><button type="button" class="btn btn-danger ms-2" style="width: 90px;">Borrar</button></th>
                 </tr>
             </tbody>
         </table>

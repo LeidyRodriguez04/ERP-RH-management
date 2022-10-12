@@ -17,7 +17,7 @@ export class ContactoService {
   constructor(private http:HttpClient) { // privé car on cherche juste a consumé la "api".
   }
   getContactos(): Observable<any>{
-    return this.http.get('${this.url}/contactos')
+    return this.http.get(`${this.url}/contacto`)
   }
 
 }
