@@ -8,7 +8,7 @@ const app = express(); // implementation du service - implementacion del servici
 connectarDB();
 
 // creation du lien cors pour recuperer les données conjointement liées entre angular et express et les lier entre eux 
-app.use(cors);
+app.use(cors());
 
 // creation d'un json de la base de données - creacion de un json de la base de datos
 app.use(express.json());

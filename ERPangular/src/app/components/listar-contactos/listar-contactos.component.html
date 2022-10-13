@@ -4,6 +4,7 @@
         <table class="container table table-hover">
             <thead>
                 <tr>
+                    <th class="" style="width: 150px;">Fecha</th>
                     <th class="text-lg-center">Nombre del cliente</th>
                     <th class="text-lg-center">Abrir</th>
                     <th class="text-lg-center">Borrar</th>
@@ -11,6 +12,7 @@
             </thead>
             <tbody>
                 <tr *ngFor="let correo of listaCorreos">
+                    <th class="" style="width: 150px;">{{correo.dateCreation}}</th>
                     <th style="width: 550px;">{{correo.apellidos}}</th>
                     <th class="" style="width: 150px;"><button type="button" class="btn btn-warning ms-2" style="width: 90px;">Leer</button></th>
                     <th class="" style="width: 150px;"><button type="button" class="btn btn-danger ms-2" style="width: 90px;">Borrar</button></th>
