@@ -13,6 +13,7 @@ import { InicioComponent } from './components/inicio/inicio.component';
 import { IngresoComponent } from './components/ingreso/ingreso.component';
 import { ContactoComponent } from './components/contacto/contacto.component';
 import { NotFoundComponent } from './components/not-found/not-found.component';
+import { InicioDashboardComponent } from './components/inicio-dashboard/inicio-dashboard.component';
 
 
 
@@ -25,6 +26,7 @@ import { NotFoundComponent } from './components/not-found/not-found.component';
     IngresoComponent,
     ContactoComponent,
     NotFoundComponent,
+    InicioDashboardComponent,
 
   ],
   imports: [
